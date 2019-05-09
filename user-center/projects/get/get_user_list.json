@@ -1,0 +1,32 @@
+[
+    {
+        "config": {
+            "name": "获取项目列表",
+            "variables": {"token": "Bearer a077c4f3-a1e1-4afc-a291-04cce52433d0"},
+            "base_url": "https://dmp.daocloud.io/user-center/v1"
+        }
+    },
+    {
+        "test": {
+            "name": "获取项目列表",
+            "request": {
+                "url": "/projects",
+                "method": "GET",
+                "headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "${get_token()}",
+                    "DMP-Project": "2"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                }
+
+            ]
+        }
+    }
+]
