@@ -1,0 +1,16 @@
+user_center_url: http://all-in-one-dev.dmptesting.xyz/user-center/v1
+gateway_admin_url: http://all-in-one-dev.dmptesting.xyz/gateway-admin/v1
+token_host: http://all-in-one-dev.dmptesting.xyz
+mysql:
+  host: all-in-one-dev.dmptesting.xyz
+  username: root
+  password: dangerous
+login:
+  admin:
+    username: dmp
+    password: dmp
+  autotester:
+    username: autotester
+    password: dmp
+header:
+  DMP-Project: "4"

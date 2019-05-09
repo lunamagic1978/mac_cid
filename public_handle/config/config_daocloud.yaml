@@ -1,0 +1,15 @@
+host: https://dmp.daocloud.io
+user_center_base_path: /user-center/v1
+mysql:
+  host: 10.122.22.15
+  username: root
+  password: Mac_34567
+login:
+  admin:
+    username: svw
+    password: dmp
+  autotester:
+    username: autotester
+    password: dmp
+header:
+  DMP-Project: "4"
